@@ -1,17 +1,12 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
-    <ul>
-      <?php foreach ($tasks as $task) {
-        echo "<li>
-        ". $task -> description . "
-        </li>";
-      };
-      ?>
-    </ul>
-  </body>
-</html>
+<?php require('partials/head.php'); ?> 
+
+  <ul>
+    <?php foreach ($tasks as $task) {
+      echo "<li>
+      ". $task -> description . "
+      </li>";
+    };
+    ?>
+  </ul>
+  
+<?php require('partials/footer.php')?>
